@@ -1,0 +1,85 @@
+@import 'fonts.css';
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    background-color: #262526;
+    overflow: auto;
+}
+
+header .logo {
+    display: inline-block;
+    width: 80px;
+}
+
+header .logo img{
+    width: 100%;
+}
+
+header nav {
+    float: right;
+    padding: 5px 20px 5px 0;
+}
+
+header ul {
+    color: #f2f2f2;
+}
+
+header ul li {
+    margin: 10px 0;
+    text-align: right;
+    font-size: 1.3em;
+    font-family: 'mission_gothicblack', sans-serif;
+}
+
+header ul li a, header ul li a:active, header ul li a:hover, header ul li a:visited {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+header ul li a:hover, header ul li a:active, header ul li a.current {
+    color: #F60A20;
+}
+
+#main_content {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'mission_gothicregular', sans-serif;
+    min-height: 75.4%;
+    margin-bottom: -40px;
+}
+
+#main_content:after {
+    content: "";
+    display: block;
+}
+
+#main_content h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#main_content p {
+    padding: 10px 0;
+}
+
+footer, #main_content:after {
+    height: 40px;
+}
+
+footer {
+    background-color: #262526;
+    color: #f2f2f2;
+    font-family: 'mission_gothicregular', sans-serif;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 10px;
+}
