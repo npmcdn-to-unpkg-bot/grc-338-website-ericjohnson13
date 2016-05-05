@@ -32,9 +32,10 @@ header ul {
 }
 
 header ul li {
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: right;
     font-size: 1.3em;
+    text-transform: uppercase;
     font-family: 'mission_gothicblack', sans-serif;
 }
 
@@ -51,7 +52,7 @@ header ul li a:hover, header ul li a:active, header ul li a.current {
     width: 80%;
     margin: 20px auto;
     font-family: 'mission_gothicregular', sans-serif;
-    min-height: 75.4%;
+    min-height: 72%;
     margin-bottom: -40px;
 }
 
@@ -63,6 +64,7 @@ header ul li a:hover, header ul li a:active, header ul li a.current {
 #main_content h1 {
     margin-bottom: 10px;
     font-size: 1.5em;
+    font-family: 'mission_gothicblack', sans-serif;
 }
 
 #main_content p {
