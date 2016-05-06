@@ -76,7 +76,7 @@ header ul li a:hover, header ul li a:active, header ul li a.current {
   display: block;
   width: 80%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 7px;
 }
 
 footer, #main_content:after {
