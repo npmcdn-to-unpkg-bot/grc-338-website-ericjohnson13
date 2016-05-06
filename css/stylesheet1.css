@@ -70,6 +70,7 @@ header ul li a:hover, header ul li a:active, header ul li a.current {
 
 #main_content p {
     padding: 10px 0;
+    line-height: 1.3em;
 }
 
 #main_content a, #main_content a:active, #main_content a:hover, #main_content a:visited {
