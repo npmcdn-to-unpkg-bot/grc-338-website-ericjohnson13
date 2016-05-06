@@ -72,6 +72,11 @@ header ul li a:hover, header ul li a:active, header ul li a.current {
     padding: 10px 0;
 }
 
+#main_content a, #main_content a:active, #main_content a:hover, #main_content a:visited {
+    color: #F60A20;
+    text-decoration: none;
+}
+
 .gallery img {
   display: block;
   width: 80%;
