@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--Detects device width-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My GrC 338 Website</title>
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <!--Detects device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GrC 338 Website</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+</head>
+
+<body>
     <header>
         <div class="logo">
-           <a href="index.html"><img src="images/ej.png" alt="EJ Logo"></a>
+            <a href="index.html"><img src="images/ej.png" alt="EJ Logo"></a>
         </div>
         <nav>
             <ul>
@@ -26,26 +32,61 @@
     <div id="main_content">
         <h1>Personal Interests</h1>
         <div class="info_box">
-          <p>As I've pointed out, I love to collect talents and skills. Some would say they are useless skills. I've recently found joy in working with Ruby on Rails and building useful webapps. I'm also a photographer. Below you'll find some photos from a recent trip I made to Yellowstone in the winter. VERY COLD!</p>
-          <div class="gallery">
-            <img src="images/yellowstone/yellowstone-1.jpg" alt="yellowstone 1">
-            <img src="images/yellowstone/yellowstone-2.jpg" alt="yellowstone 2">
-            <img src="images/yellowstone/yellowstone-3.jpg" alt="yellowstone 3">
-            <img src="images/yellowstone/yellowstone-4.jpg" alt="yellowstone 4">
-            <img src="images/yellowstone/yellowstone-5.jpg" alt="yellowstone 5">
-            <img src="images/yellowstone/yellowstone-6.jpg" alt="yellowstone 6">
-            <img src="images/yellowstone/yellowstone-7.jpg" alt="yellowstone 7">
-            <img src="images/yellowstone/yellowstone-8.jpg" alt="yellowstone 8">
-            <img src="images/yellowstone/yellowstone-9.jpg" alt="yellowstone 9">
-            <img src="images/yellowstone/yellowstone-10.jpg" alt="yellowstone 10">
-            <img src="images/yellowstone/yellowstone-11.jpg" alt="yellowstone 11">
-            <img src="images/yellowstone/yellowstone-12.jpg" alt="yellowstone 12">
-            <img src="images/yellowstone/yellowstone-13.jpg" alt="yellowstone 13">
-            <img src="images/yellowstone/yellowstone-14.jpg" alt="yellowstone 14">
-            <img src="images/yellowstone/yellowstone-15.jpg" alt="yellowstone 15">
-            <img src="images/yellowstone/yellowstone-16.jpg" alt="yellowstone 16">
-            <img src="images/yellowstone/yellowstone-17.jpg" alt="yellowstone 17">
-          </div>
+            <p>As I've pointed out, I love to collect talents and skills. Some would say they are useless skills. I've recently found joy in working with Ruby on Rails and building useful webapps. I'm also a photographer. Below you'll find some photos from
+                a recent trip I made to Yellowstone in the winter. VERY COLD!</p>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-1.jpg" alt="yellowstone 1">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-2.jpg" alt="yellowstone 2">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-3.jpg" alt="yellowstone 3">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-4.jpg" alt="yellowstone 4">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-5.jpg" alt="yellowstone 5">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-6.jpg" alt="yellowstone 6">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-7.jpg" alt="yellowstone 7">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-8.jpg" alt="yellowstone 8">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-9.jpg" alt="yellowstone 9">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-10.jpg" alt="yellowstone 10">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-11.jpg" alt="yellowstone 11">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-12.jpg" alt="yellowstone 12">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-13.jpg" alt="yellowstone 13">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-14.jpg" alt="yellowstone 14">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-15.jpg" alt="yellowstone 15">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-16.jpg" alt="yellowstone 16">
+                </div>
+                <div class="grid-item">
+                    <img src="images/yellowstone/yellowstone-17.jpg" alt="yellowstone 17">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -53,5 +94,20 @@
         <p><small>Copyright &copy; 2016 Eric Johnson </small></p>
     </footer>
 
-    </body>
+<script type="text/javascript">
+    // init Masonry
+    var $grid = $('.grid').masonry({
+    // options...
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry({
+        // options
+        itemSelector: '.grid-item'
+      });
+    });
+</script>
+
+</body>
+
 </html>
