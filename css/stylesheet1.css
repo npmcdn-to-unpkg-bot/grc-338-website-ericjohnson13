@@ -52,7 +52,7 @@ header ul li a:hover, header ul li a:active, header ul li a.current {
     width: 80%;
     margin: 20px auto;
     font-family: 'mission_gothicregular', sans-serif;
-    min-height: 72%;
+    min-height: 100%;
     margin-bottom: -40px;
 }
 
@@ -64,7 +64,7 @@ header ul li a:hover, header ul li a:active, header ul li a.current {
 
 #main_content h1 {
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-family: 'mission_gothicblack', sans-serif;
 }
 
@@ -114,4 +114,33 @@ footer {
 
 footer p {
     padding-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  header {
+    padding: 0 15%;
+  }
+
+  #main_content {
+    width: 60%;
+  }
+
+  #main_content h1 {
+    font-size: 2.4em;
+  }
+
+  #main_content p {
+    font-size: 1.1em;
+  }
+
+  .info_box {
+    overflow: hidden;
+  }
+
+  .gallery {
+    width: 50%;
+    float: right;
+  }
+
 }
