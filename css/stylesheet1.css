@@ -1,5 +1,7 @@
 @import 'fonts.css';
 
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
 * {
     margin: 0;
 }
@@ -154,7 +156,23 @@ footer p {
   }
 
   .grid-item {
-    width: 48%;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  header {
+    padding: 0 20%;
+  }
+
+  .gallery {
+    width: 30%;
+  }
+
+  .grid-item {
+    width: 33%;
   }
 
 }
