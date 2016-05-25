@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My GrC 338 Website</title>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel='stylesheet' href='http://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+        <link rel="stylesheet" type="text/css" href="css/prism.css">
         <link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
     </head>
     <body>
@@ -24,9 +26,28 @@
     </header>
 
     <div id="main_content">
-        <h1>Personal Interests</h1>
+        <h1>Professional Interests</h1>
         <div class="info_box narrower-body">
           <p>In the past several months, I have started to become increasingly interested in learning and teaching Ruby on Rails. Ruby on Rails is a facinating web framework that allows for rapid web application development. I've also learned that Ruby is indeed an incredible programming language that, as the developer has said, is designed for programmer productivity and fun.</p>
+          <p>Case in point, below are two block of code that do the exact same thing. The first is written in JavaScript, the second written in Ruby. I leave it to you to determine which is easier to use and understand.</p>
+          <h3>JavaScript</h3>
+          <pre>
+            <code class="language-javascript">
+              function rand(a, b) { return Math.floor(Math.random() * (b - a + 1) + a); }
+              rand(5, 9); // one of [5, 6, 7, 8, 9]
+
+              a = [b, b = a][0] // do not try at home :-)
+            </code>
+          </pre>
+          <h3>Ruby</h3>
+          <pre>
+            <code class="language-ruby">
+              prng = Random.new()
+              prng.rand(5..9) # one of [5, 6, 7, 8, 9]
+
+              a, b = b, a # switch a and b
+            </code>
+          </pre>
           <p>You can learn more about Ruby and Ruby on Rails <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">here</a> and <a href="https://www.railstutorial.org">here</a>.</p>
           <p>I recently developed a small little tool for the GrC Department using Ruby on Rails.
             <a href="https://grc-schedule.herokuapp.com/schedules">Take a look!</a>
@@ -37,6 +58,6 @@
     <footer>
         <p><small>Copyright &copy; 2016 Eric Johnson </small></p>
     </footer>
-
+    <script src="js/prism.js"></script>
     </body>
 </html>
