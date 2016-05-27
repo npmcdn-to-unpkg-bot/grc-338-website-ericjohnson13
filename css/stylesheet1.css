@@ -134,7 +134,7 @@ footer p {
 }
 
 pre, code {
-  font-family: Hack, monospace;
+  font: normal 10pt Hack, monospace;
 }
 
 
