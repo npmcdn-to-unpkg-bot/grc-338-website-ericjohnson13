@@ -133,10 +133,10 @@ footer p {
   height: auto;
 }
 
-code {
-  position: relative;
-  left: -120px;
+pre, code {
+  font-family: Hack, monospace;
 }
+
 
 @media only screen and (min-width: 768px) {
 
